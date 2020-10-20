@@ -45,7 +45,7 @@ jobs:
             cargo install --git https://github.com/kevinswiber/postman2openapi --features binary
             postman2openapi GWS-DOCS.postman_collection.json > open-api.yaml
             echo "copying file to directory"
-            #cp open-api.yaml ./docs
+            cp open-api.yaml ./docs
 
             echo "copying the file to archive directory"
           else
