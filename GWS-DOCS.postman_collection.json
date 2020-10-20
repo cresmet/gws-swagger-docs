@@ -737,9 +737,9 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{URL}}/soa-infra/resources/GWS/find-retailer/api/v1/list?page=1&limit=20",
+							"raw": "{{domain}}/soa-infra/resources/GWS/find-retailer/api/v1/list?page=1&limit=20",
 							"host": [
-								"{{URL}}"
+								"{{domain}}"
 							],
 							"path": [
 								"soa-infra",
