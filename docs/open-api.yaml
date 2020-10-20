@@ -7,7 +7,6 @@ info:
   contact: {}
 servers:
   - url: "{{domain}}"
-  - url: "{{URL}}"
 paths:
   /soa-infra/resources/GWS/Product/catalog/:
     get:
