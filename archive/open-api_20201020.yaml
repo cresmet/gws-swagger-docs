@@ -67276,20 +67276,6 @@ paths:
       responses:
         "200":
           description: ""
-  /soa-infra/resources/GWS/processorder/api/v1/order:
-    post:
-      tags:
-        - order
-      summary: order creation with address creation
-      description: order creation with address creation
-      operationId: orderCreationWithAddressCreation
-      requestBody:
-        content:
-          text/plain:
-            example: "{\n  \"CredentialRequest\": {\n    \"Username\": \"{{username}}\",\n    \"Password\": null,\n    \"AccountNumber\": \"{{accnum}}\",\n    \"Lang\": \"{{lang}}\",\n    \"Country\": \"{{cntry}}\",\n    \"SourceApp\": \"POS\"\n  },\n  \"OrderRequest\": {\n    \"ExtOrderRef\":  {{ExtOrdRef}},\n    \"BillTo\": {\n      \"FirstName\": null,\n      \"LastName\": null,\n      \"MiddleName\": null,\n      \"PhoneNumber\": null,\n      \"EmailAddress\": null,\n      \"SourceAddrRef\": null,\n      \"AddressLine1\": null,\n      \"AddressLine2\": null,\n      \"AddressLine3\": null,\n      \"AddressLine4\": null,\n      \"AddressLine5\": null,\n      \"City\": null,\n      \"State\": null,\n      \"County\": null,\n      \"Province\": null,\n      \"PostalCode\": null,\n      \"Country\": null\n    },\n    \"ShipTo\": {\n      \"FirstName\": null,\n      \"LastName\": null,\n      \"MiddleName\": null,\n      \"PhoneNumber\": null,\n      \"EmailAddress\": null,\n      \"SourceAddrRef\": 357492,\n      \"AddressLine1\": null,\n      \"AddressLine2\": null,\n      \"AddressLine3\": null,\n      \"AddressLine4\": null,\n      \"AddressLine5\": null,\n      \"City\": null,\n      \"State\": null,\n      \"County\": null,\n      \"Province\": null,\n      \"PostalCode\": null,\n      \"Country\": null\n    },\n    \"PaymentTerm\": null,\n    \"ShippingInfo\": {\n      \"ShipMethodCode\": \"000001\",\n      \"ShippingInstructions\": \"this is a test\",\n      \"PreferredDeliveryDate\": null\n    },\n    \"AdditionalInfo\": {\n      \"ShippingNote\": \"Test Shipping Note\",\n      \"SalesRepNote\": \"Test Salesrep Note\",\n      \"AdditionalNote\": \"Test Additional Note\"\n    },\n    \"TaxAmount\": null,\n    \"FreightAmount\": null,\n    \"OrderTotalAmount\": 3957.15,\n    \"CurrencyCode\": \"USD\",\n    \"TransactionType\": \"CREATE\",\n    \"OrderLine\": [\n      {\n        \"ExtOrderLineRef\": {{$randomInt}},\n        \"SellersItemIdentification\": {\n          \"ItemNumber\": \"90619-6254\"\n        },\n        \"Quantity\": \"3\",\n        \"PreferredDeliveryDate\": null,\n        \"ShipFromWarehouse\": null,\n        \"ItemMoveForward\": null,\n        \"AmountIncludesTax\": \"N\",\n        \"UnitSellingPrice\":\"1316.25\",\n        \"LineAmount\": null,\n        \"DiscountAmount\": null,\n        \"TaxAmount\": null,\n        \"AdditionalLineInfo\": {\n          \"ShippingNote\": null,\n          \"SalesRepNote\": null,\n          \"AdditionalNote\": null\n        },\n        \"ReturnInfo\": {\n          \"ReturnReasonCode\": null,\n          \"ReturnReasonComments\": null\n        },\n        \"TransactionType\": \"CREATE\"\n      },\n{\n        \"ExtOrderLineRef\": {{$randomInt}},\n        \"SellersItemIdentification\": {\n          \"ItemNumber\": \"030-0303\"\n        },\n        \"Quantity\": \"3\",\n        \"PreferredDeliveryDate\": null,\n        \"ShipFromWarehouse\": null,\n        \"ItemMoveForward\": null,\n        \"AmountIncludesTax\": \"N\",\n        \"UnitSellingPrice\":\"2.8\",\n        \"LineAmount\": null,\n        \"DiscountAmount\": null,\n        \"TaxAmount\": null,\n        \"AdditionalLineInfo\": {\n          \"ShippingNote\": null,\n          \"SalesRepNote\": null,\n          \"AdditionalNote\": null\n        },\n        \"ReturnInfo\": {\n          \"ReturnReasonCode\": null,\n          \"ReturnReasonComments\": null\n        },\n        \"TransactionType\": \"CREATE\"\n      }      \n    ]\n  }\n}"
-      responses:
-        "200":
-          description: ""
   "/soa-infra/resources/GWS/searchserial/product/v1/{sno}":
     get:
       tags:
@@ -67506,4 +67492,3 @@ paths:
 tags:
   - name: product
   - name: dealer
-  - name: order
